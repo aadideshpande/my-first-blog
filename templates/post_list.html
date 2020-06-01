@@ -12,7 +12,11 @@
     <title>Posts List</title>
   </head>
   <body>
-    <h1>Movies Blog</h1>
+    <h1>My Movies Blog</h1>
+    {% for post in posts %}
+      <p>published date: {{ post.published_date}}</p>
+      <p>name: {{post.title}}</p>
+    {% endfor %}
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
